@@ -1,0 +1,112 @@
+h1 {
+  text-align: center;
+}
+
+.Title {
+  text-align: center; 
+  color: #B38B6D; 
+  font-size: 36px; 
+  margin-top: 100px; 
+  }
+  
+
+ .Manager {
+    background-color: #800020;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block; 
+    font-size: 24px;
+    width: fit-content; 
+    margin:  auto; 
+    justify-content: center;
+    align-items: center;
+ }
+
+ 
+ .Employee {
+  background-color: #800020;
+    border: none;
+    color: white;
+    padding: 15px 26px;
+    text-align: center;
+    text-decoration: none;
+    display: block; 
+    font-size: 24px;
+    width: fit-content; 
+    margin: 0 auto; 
+    
+ }
+  
+.Host  {
+  background-color: #800020;
+    border: none;
+    color: white;
+    padding: 15px 58px;
+    text-align: center;
+    text-decoration: none;
+    display: block; 
+    font-size: 24px;
+    width: fit-content; 
+    margin: 0 auto; 
+ 
+}
+
+.BusStaff {
+  background-color: #800020;
+    border: none;
+    color: white;
+    padding: 15px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: block; 
+    font-size: 24px;
+    width: fit-content; 
+    margin: 0 auto; 
+
+}
+
+.Kitchen {
+  background-color: #800020;
+    border: none;
+    color: white;
+    padding: 15px 42px;
+    text-align: center;
+    text-decoration: none;
+    display: block; 
+    font-size: 24px;
+    width: fit-content; 
+    margin: 0 auto; 
+}
+
+.WaitStaff {
+  background-color: #800020;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block; 
+    font-size: 24px;
+    width: fit-content; 
+    margin: 0 auto; 
+}
+
+.HostMenu {
+  background-color: #800020;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block; 
+    font-size: 24px;
+    width: fit-content; 
+    margin: 0 auto; 
+}
+
+body {
+  background-color:  #F5F5DC;
+}
