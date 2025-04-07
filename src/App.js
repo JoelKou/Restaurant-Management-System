@@ -8,6 +8,8 @@ import { Host } from './Pages/Employees/Host/Host';
 import { Kitchen } from './Pages/Employees/Kitchen/Kitchen';
 import { WaitStaff } from './Pages/Employees/WaitStaff/WaitStaff';
 import { HostMenu } from './Pages/Employees/Host/HostMenu';
+import { HostAssign } from './Pages/Employees/Host/HostAssign';
+import { KitchenOrders } from './Pages/Employees/Kitchen/KitchenOrders';
 
 function App() {
     
@@ -41,7 +43,9 @@ function App() {
                //Defines to Wait Staff Page
                <Route path="/WaitStaff" element={<WaitStaff/>}/>
 
+               <Route path="/HostAssign" element={<HostAssign/>}/>
                
+               <Route path="/KitchenOrders" element={<KitchenOrders/>}/>
            </Routes>
            </Router>
 

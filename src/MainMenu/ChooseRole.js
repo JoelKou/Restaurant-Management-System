@@ -6,13 +6,13 @@ export function ChooseRole() {
         <>
         <h1>I am .. </h1>
         
-        <div>
+        <div className="container">
         <Link to="/Manager" className="Manager" >  Manager </Link>  {/*  Navigates to the Manager page */}
-        </div>
-
-        <div>
+    
         <Link to="/EmployeeScr" className="Employee" >  Employee </Link> {/*  Navigates to the Employee page */}
         </div>
+
+        
         </>
     )
 }
