@@ -40,7 +40,7 @@ h1 {
 }
 
 /*Adds the red button style  */
-.Host, .WaitStaff, .BusStaff, .Kitchen, .TableManagementLink, .KitchenOrders, .CreateProfile
+.Host, .WaitStaff, .BusStaff, .Kitchen, .TableManagementLink, .KitchenOrders, .CreateProfile, .TakeOrder, .TableManagementLinkSection2
   {
   background-color: #800020;
   border: none;

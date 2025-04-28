@@ -1,15 +1,13 @@
 import React, { useState } from "react";
+import { useLocalStorage } from "../Hook/useLocalStorage";
 
 export function TableAssign({ tableName = "Table 1" }) {
 
-// Keeps track of whether the table is Available, Occupied, or Busy
-  const [status, setStatus] = useState(0);
+  const [status, setStatus] = useLocalStorage(`${tableName}_status`, 0);
 
-  // How many people are currently sitting at the table
-  const [customerCount, setCustomerCount] = useState(0);
-
-  //Max Number of seats at table
-  const [availableSeats, setAvailableSeats] = useState(4);
+  const [customerCount, setCustomerCount] = useLocalStorage(`${tableName}_customerCount`, 0);
+  
+  const [availableSeats, setAvailableSeats] = useLocalStorage(`${tableName}_availableSeats`, 4);
 
   //Different status in the table
   const buttonStates = [

@@ -1,4 +1,5 @@
 import { TableAssign } from "../componets/TableAssign";
+import { Link } from "react-router-dom";
 
 export function TableManagementLink() {
 
@@ -6,6 +7,7 @@ export function TableManagementLink() {
 
     <div>
       <h1 className="page-title">Tables</h1>
+      <Link to="/TableManagementLinkSection2" className="TableManagementLinkSection2"> Go to Table 16-30 </Link> 
       <div className="grid-wrapper">
         <TableAssign tableName="Table 1" />
         <TableAssign tableName="Table 2" />

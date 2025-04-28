@@ -1,8 +1,10 @@
-
+import { Link
+    
+ } from "react-router-dom"
 export function WaitStaff() {
     return (
         <>
-        <h1> This is Wait Staff </h1>
+        <Link to="/TakeOrder" className="TakeOrder"> Kitchen Orders </Link> 
         </>
     )
 }

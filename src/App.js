@@ -11,7 +11,8 @@ import { HostMenu } from './Pages/Employees/Host/HostMenu';
 import {TableManagementLink} from './shared links/TableManagementLink'
 import { KitchenOrders } from './Pages/Employees/Kitchen/KitchenOrders';
 import {CreateProfile} from './Pages/Manager/CreateProfile';
-
+import { TakeOrder} from './Pages/Employees/WaitStaff/TakeOrder';
+import { TableManagementLinkSection2 } from './shared links/TableManagementLinkSection2';
 function App() {
     
     return (
@@ -49,6 +50,10 @@ function App() {
                <Route path="/KitchenOrders" element={<KitchenOrders/>}/>
 
                <Route path="/CreateProfile" element={<CreateProfile/>}/>
+
+               <Route path="/TakeOrder" element={<TakeOrder/>}/>
+
+               <Route path="/TableManagementLinkSection2" element={<TableManagementLinkSection2/>}/>
            </Routes>
            </Router>
 
