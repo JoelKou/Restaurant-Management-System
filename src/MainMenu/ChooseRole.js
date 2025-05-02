@@ -17,4 +17,4 @@ export function ChooseRole() {
     )
 }
 
-{/* Page to choose whether they are an employee or manager */}
+// Page to choose whether they are an employee or manager 

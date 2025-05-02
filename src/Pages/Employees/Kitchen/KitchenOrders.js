@@ -1,9 +1,47 @@
+import { useLocation } from "react-router-dom";
+import { Link
 
+ } from "react-router-dom";
 export function KitchenOrders() {
-    return (
-        <>
-        <h1>This is Kitchen Orders List </h1>
-        
-        </>
-    )
+  const location = useLocation();
+  const { orders } = location.state || {}; 
+
+  console.log("Received orders:", orders); 
+
+  return (
+    <div>
+      <h2>Kitchen Orders</h2>
+
+  <Link to="/TableManagementLink" className="TableManagementLink">
+                Go back
+            </Link>
+
+      {orders ? (
+        <ul>
+          {Array.from(orders.entries()).map(([tableNumber, data]) => (
+            <li key={tableNumber}>
+              <div>
+                <strong>Table Number:</strong> {tableNumber}
+              </div>
+              <div>
+                <strong>Order Details:</strong>
+                <ul>
+                  {data.orderDetails.map((item, index) => (
+                    <li key={index}>
+                      {item.name} (x{item.quantity})
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <strong>Notes:</strong> {data.notes}
+              </div>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p>No orders available.</p>
+      )}
+    </div>
+  );
 }

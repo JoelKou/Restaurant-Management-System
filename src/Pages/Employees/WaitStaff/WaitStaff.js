@@ -1,10 +1,10 @@
+import { Link } from "react-router-dom";
 
 export function WaitStaff() {
     return (
-        <>
-        <h1> This is Wait Staff </h1>
-        </>
-    )
+        <div className="left-aligned-links">
+            <Link to="/TableManagementLink" className="TableManagementLink"> Wait Menu </Link>
+            <Link to="/EmployeeScr" className="Employee"> Go back </Link>
+        </div>
+    );
 }
-
-{/* Wait Staff Page */}

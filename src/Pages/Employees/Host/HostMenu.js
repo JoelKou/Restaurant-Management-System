@@ -6,6 +6,7 @@ export function HostMenu() {
 
         
         <Link to="/TableManagementLink" className="TableManagementLink"> Assign Customer to Table </Link>
+        
         </>
     )
 }

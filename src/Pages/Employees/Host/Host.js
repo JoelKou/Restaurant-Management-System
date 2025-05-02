@@ -2,10 +2,9 @@ import { Link } from "react-router-dom";
 
 export function Host() {
     return (
-        <>
-        <Link to="/HostMenu" className="HostMenu"> Host Menu </Link> {/*  Navigates to the Host Menu page */}
-        </>
-    )
+        <div className="left-aligned-links">
+            <Link to="/HostMenu" className="HostMenu"> Host Menu </Link>
+            <Link to="/EmployeeScr" className="Employee"> Go back </Link>
+        </div>
+    );
 }
-
-{/*Host Page */}

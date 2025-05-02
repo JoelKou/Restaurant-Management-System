@@ -1,47 +1,25 @@
+/* Center align the h1 element */
 h1 {
   text-align: center;
 }
 
+/* Style for the title with specific font size and color */
 .Title {
   text-align: center; 
   color: #B38B6D; 
   font-size: 36px; 
   margin-top: 100px; 
-  }
-  
-
-  .container {
-    display: flex;
-    justify-content: center;
-    gap: 10px; 
 }
 
-.Manager, .Employee {
-    background-color: #800020;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: flex;
-    font-size: 24px;
-    width: fit-content;
-    justify-content: center;
-    align-items: center;
-}
-
-  
+/* Container that centers its content and adds a gap between items */
 .container {
   display: flex;
-  flex-direction: column; /* Stack the links vertically */
   justify-content: center;
-  align-items: center; /* Center the links horizontally */
-  gap: 10px;
+  gap: 10px; 
 }
 
-/*Adds the red button style  */
-.Host, .WaitStaff, .BusStaff, .Kitchen, .TableManagementLink, .KitchenOrders, .CreateProfile
-  {
+/* Styling for Manager and Employee buttons */
+.Manager, .Employee {
   background-color: #800020;
   border: none;
   color: white;
@@ -55,25 +33,42 @@ h1 {
   align-items: center;
 }
 
-.HostMenu 
-{
-  background-color: #800020;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: block; 
-    font-size: 24px;
-    width: fit-content; 
-    margin: 0 auto; 
+/* Flexbox container with column direction and center-alignment */
+.container {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center; 
+  gap: 10px;
 }
 
+/* Styling for various button classes like Host, WaitStaff, Kitchen, etc. */
+.Host, .Main, .WaitStaff, .BusStaff, .Kitchen, .TableManagementLink, .KitchenOrders, .CreateProfile, .TakeOrder, .TableManagementLinkSection2, .ChooseRole {
+  background-color: #800020;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  font-size: 24px;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling specific for TableManagementLinkSection2 with margins */
+.TableManagementLinkSection2 {
+  margin: 20px auto; 
+  display: block; 
+}
+
+/* Body background color */
 body {
   background-color:  #F5F5DC;
 }
 
-
+/* Button style with padding, border-radius, and cursor */
 .button {
   color: black;
   padding: 10px 20px;
@@ -82,6 +77,7 @@ body {
   cursor: pointer;
 }
 
+/* Styling for available, occupied, and busy states with respective colors */
 .available {
   background-color: green;
 }
@@ -94,3 +90,67 @@ body {
   background-color: red;
 }
 
+/* Page title styling with center alignment and bottom margin */
+.page-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Main content area with flex display and spacing between items */
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* Wrapper for tables with column layout and gap between each table */
+.tables-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex-grow: 1;
+}
+
+/* Flex row for table layout with wrapping */
+.row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Divider for spacing between rows of tables */
+.divider {
+  height: 10px;
+  margin: 10px 0;
+}
+
+/* Center the links left-aligned */
+.left-aligned-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 20px;
+  padding-top: 20px;  /* Space from the top */
+}
+
+/* Common styling for links */
+.left-aligned-links a {
+  margin-bottom: 20px; /* Adds space between links */
+  text-decoration: none; /* Optional: removes underline */
+}
+
+/* Styling for individual links */
+.HostMenu, .TableManagementLink, .KitchenOrders, .Employee {
+  background-color: #800020;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  font-size: 24px;
+  text-align: center;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
